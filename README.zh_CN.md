@@ -1,9 +1,8 @@
 # Empty Dir Utils
 
-> Search
-> & Remove Empty Directories.
+> 空文件夹查询和删除工具
 
-## How to use
+## 使用
 
 ```shell
 emp --help
@@ -11,7 +10,7 @@ emp search --help
 emp remove --help
 ```
 
-### Search within given context
+### 查询给定路径下的空文件夹
 
 ```shell
 # basic usage
@@ -22,7 +21,7 @@ emp search ./ -v
 emp search ./ --prompt
 ```
 
-### Remove within given context
+### 删除给定路径下的空文件夹
 
 ```shell
 # basic usage
@@ -32,3 +31,7 @@ emp remove ./ -l
 # with verbose log
 emp remove ./ -l -v
 ```
+
+## 更多
+
+操作为单级操作，非递归深层路径！
