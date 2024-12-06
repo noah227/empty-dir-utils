@@ -32,7 +32,3 @@ emp remove ./ -l
 # with verbose log
 emp remove ./ -l -v
 ```
-
-### More
-
-It's a single layer operation, not recursively!
