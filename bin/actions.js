@@ -15,7 +15,7 @@ const searchEmptyDirs = (
     promptNext = false
 ) => {
     const searchContext = path.resolve(process.cwd(), p)
-    console.log(chalk.cyan("Search context: "), searchContext)
+    console.log(chalk.cyan("Search Context: "), searchContext)
     const emptyDirs = fs.readdirSync(searchContext, {withFileTypes: true}).reduce((emptyDirs, d) => {
         const fullPath = path.join(d.parentPath, d.name)
         if (d.isDirectory() && !fs.readdirSync(fullPath).length) {
